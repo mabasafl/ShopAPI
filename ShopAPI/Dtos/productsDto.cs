@@ -1,6 +1,6 @@
 ﻿namespace ShopAPI.Dtos
 {
-    public class productsDto
+    public class ProductsDto
     {
         public int ID { get; set; }
         public string? ItemName { get; set; }
