@@ -1,6 +1,6 @@
 ﻿namespace ShopAPI.Models
 {
-    public class products
+    public class Products
     {
         public int ID { get; set; }
         public string? ItemName { get; set; }
