@@ -41,12 +41,13 @@ namespace ShopAPI.Controllers
             {
                 var result = await _productService.GetProductAsync(productId);
 
-                if (result == null)
+                //did this on the service instead
+                /*if (result == null)
                 {
                     return NotFound(new { Message = "No product available with Id " + productId + "."});
-                }
+                }*/
 
-                return Ok(result);
+                return Ok(new { Messaage = "Your queried Product:" + Environment.NewLine + result.ItemName });
             }
             catch(Exception ex)
             {
